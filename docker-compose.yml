@@ -39,9 +39,9 @@ services:
     restart: always
   bankapp:
     container_name: bankapplication 
-    image: rk0617/bankapp:latest
+    image: bankapp:latest
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/BankDB?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/bankapp?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=test@1234 
     ports:
