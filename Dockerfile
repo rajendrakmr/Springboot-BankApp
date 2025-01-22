@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN mvn clean install -DSkipTests=true
+RUN mvn clean install -DskipTests=true
 
 #stage 2
 FROM openjdk:17-alpine
